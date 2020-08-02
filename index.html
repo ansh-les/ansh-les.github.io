@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ansh Saini</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script defer src="js/script.js" type="text/javacript"></script>
+  </head>
+  <body>
+    <nav class="py-4 nav-bg">
+      <ul class="flex px-3 items-center">
+        <!-- <li class="px-2 font-semibold">About</li>
+        <li class="px-2 font-semibold">Experience</li>
+        <li class="px-2 font-semibold">Projects</li>
+        <li class="px-2 font-semibold">Contact</li> -->
+        <li class="px-2 text-2xl font-semibold">
+          Hey! I'm Ansh. Welcome to my portfolio thingy.
+        </li>
+        <!-- Spacer -->
+        <li class="flex-1"></li>
+        <li class="px-2">
+          <a target="_blank" href="https://www.linkedin.com/in/ansh-saini/">
+            <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="px-2">
+          <a target="_blank" href="https://www.github.com/ansh-saini/">
+            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container mx-auto mt-8">
+      <div class="flex">
+        <div class="w-1/5 mr-8 hidden lg:block">
+          <ul class="list-container">
+            <li class="list-item flex items-center">
+              <div>
+                <img src="images/me2.jpg" class="h-10 w-10 rounded-full mr-4" />
+              </div>
+              <div>
+                <p class="font-semibold">
+                  <a
+                    class="link-text"
+                    target="_blank"
+                    href="https://www.github.com/ansh-saini/"
+                  >
+                    ansh-saini
+                  </a>
+                </p>
+                <p class="text-sm text-gray-800">Hope you are doing good</p>
+              </div>
+            </li>
+            <li class="list-item list-item-active">
+              <a href="#profile">
+                Profile
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="#experience" class="w-100">
+                Work Experience
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="#projects">Projects</a>
+            </li>
+            <li class="list-item"><a href="#contact">Contact Me</a></li>
+          </ul>
+
+          <ul class="mt-4 list-container">
+            <li class="list-item">
+              Resume
+            </li>
+          </ul>
+        </div>
+        <div class="flex-1">
+          <!-- PROFILE -->
+          <section id="profile">
+            <p class="text-3xl">
+              Public Profile
+            </p>
+            <hr />
+            <div class="flex my-4">
+              <div class="w-2/3 mr-8">
+                <div class="mb-3">
+                  <div class="flex flex-col">
+                    <label class="font-semibold mb-2" for="fname">Name</label>
+                    <input
+                      type="text"
+                      id="fname"
+                      name="fname"
+                      value="Ansh Saini"
+                      disabled
+                    />
+                    <span class="text-sm text-gray-800">
+                      Your name may appear around GitHub where you contribute or
+                      are mentioned. You can remove it at any time.
+                    </span>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <div class="flex flex-col">
+                    <label class="font-semibold mb-2" for="email">
+                      Public Email
+                    </label>
+                    <input
+                      type="text"
+                      id="email"
+                      name="email"
+                      value="anshsaini625@gmail.com"
+                      disabled
+                    />
+                    <span class="text-sm text-gray-800">
+                      You can manage verified email addresses in your email
+                      settings.
+                    </span>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <div class="flex flex-col">
+                    <label class="font-semibold mb-2" for="bio">
+                      Bio
+                    </label>
+                    <textarea type="text" id="bio" name="bio" rows="5" disabled>
+Full Stack Developer based in New Delhi, India.
+Second year student @ VIPS, IPU.
+I develop exceptional web applications that provide efficient and scalable backends. I strive to learn new technologies and work on improving my skillset.</textarea
+                    >
+                    <span class="text-sm text-gray-800">
+                      You can @mention other users and organizations to link to
+                      them.
+                    </span>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <div class="flex flex-col">
+                    <label class="font-semibold mb-2" for="URL">
+                      URL
+                    </label>
+                    <input
+                      type="text"
+                      id="URL"
+                      name="URL"
+                      value="ansh-saini.github.io"
+                      disabled
+                    />
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <div class="flex flex-col">
+                    <label class="font-semibold mb-2" for="company">
+                      Company
+                    </label>
+                    <input
+                      type="text"
+                      id="company"
+                      name="company"
+                      value="Les Transformations"
+                      disabled
+                    />
+                    <span class="text-sm text-gray-800">
+                      You can @mention your company’s GitHub organization to
+                      link it.
+                    </span>
+                  </div>
+                </div>
+
+                <hr class="my-4" />
+
+                <div class="mb-3">
+                  <div class="flex flex-col">
+                    <label class="font-semibold mb-2" for="location">
+                      Location
+                    </label>
+                    <input
+                      type="text"
+                      id="location"
+                      name="location"
+                      value="New Delhi, India"
+                      disabled
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="w-1/3">
+                <img
+                  class="avatar rounded-full mx-auto"
+                  src="/images/me2.jpg"
+                />
+              </div>
+            </div>
+          </section>
+
+          <!-- Work Experience -->
+          <section id="experience">
+            <p class="text-3xl">
+              Work Experience
+            </p>
+            <hr />
+
+            <div class="flex flex-wrap -mx-2 mt-4">
+              <div class="w-full lg:w-1/2 px-2 my-2">
+                <div class="github-card flex flex-col justify-between">
+                  <div class="content">
+                    <p class="font-semibold github-blue">
+                      <a href="https://www.lestransformations.com/">
+                        Les Transformations
+                      </a>
+                    </p>
+                    <p>Full Stack Developer</p>
+                    <ul class="my-3 list-disc list-inside">
+                      <li>
+                        Primarily managing/leading frontend development
+                      </li>
+                      <li>
+                        Heavily involved with both backend and frontend of the
+                        products of the company like Virtual Classrooms, School
+                        Inspection Framework, Assignments Platform
+                      </li>
+                    </ul>
+                  </div>
+                  <p>
+                    August 2019 - Present
+                  </p>
+                </div>
+              </div>
+              <div class="w-full lg:w-1/2 px-2 my-2">
+                <div class="github-card flex flex-col justify-between">
+                  <div class="content">
+                    <p class="font-semibold github-blue">Festro</p>
+                    <p>Backend Developer (Intern)</p>
+                    <ul class="my-3 list-disc list-inside">
+                      <li>
+                        Developed the entire backend for Festro App and served
+                        it to React Native frontend using APIs.
+                      </li>
+                      <li>
+                        Developed Festro's website which enables users to access
+                        to a lot more features and several analytics about their
+                        account.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <p>
+                    May 2019 - August 2019
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="projects">
+            <p class="text-3xl">
+              Projects
+            </p>
+            <hr />
+
+            <div class="flex flex-wrap -mx-2 mt-4">
+              <div class="w-full lg:w-1/2 px-2 my-2">
+                <div class="github-card flex flex-col justify-between">
+                  <div class="content">
+                    <p class="font-semibold github-blue">
+                      <a href="https://beta.suraasa.com">
+                        Suraasa
+                      </a>
+                    </p>
+                    <p>
+                      <i
+                        class="fa fa-lock text-yellow-500"
+                        aria-hidden="true"
+                      ></i>
+                      !open source
+                    </p>
+                    <p class="my-3">
+                      An application that to provides teachers with courses and
+                      qualifications so they can increase their skill-set and
+                      land a well paying job.
+                    </p>
+                  </div>
+                  <div class="flex flex-wrap">
+                    <div class="flex mt-1 mr-4 items-center">
+                      <div class="h-4 w-4 bg-green-800 rounded-full"></div>
+                      <span class="ml-1">Django</span>
+                    </div>
+                    <div class="flex mt-1 mr-4 items-center">
+                      <div class="h-4 w-4 bg-red-500 rounded-full"></div>
+                      <span class="ml-1">DRF</span>
+                    </div>
+                    <div class="flex mt-1 mr-4 items-center">
+                      <div class="h-4 w-4 bg-blue-400 rounded-full"></div>
+                      <span class="ml-1">React</span>
+                    </div>
+                    <div class="flex mt-1 mr-4 items-center">
+                      <div class="h-4 w-4 bg-green-500 rounded-full"></div>
+                      <span class="ml-1">Vue</span>
+                    </div>
+                    <div class="flex mt-1 mr-4 items-center">
+                      <div class="h-4 w-4 bg-yellow-500 rounded-full"></div>
+                      <span class="ml-1">MongoDB</span>
+                    </div>
+                    <div class="flex mt-1 mr-4 items-center">
+                      <div class="h-4 w-4 bg-indigo-700 rounded-full"></div>
+                      <span class="ml-1">PostgreSQL</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full lg:w-1/2 px-2 my-2">
+                <div class="github-card flex flex-col justify-between">
+                  <div class="content">
+                    <p class="font-semibold github-blue">
+                      <a href="https://beta.suraasa.com">
+                        Festro
+                      </a>
+                    </p>
+                    <p>
+                      <i
+                        class="fa fa-lock text-yellow-500"
+                        aria-hidden="true"
+                      ></i>
+                      !open source
+                    </p>
+                    <p class="my-3">
+                      Festro lets organizers create and promote their events on
+                      the Festro App. Attendees can buy tickets directly from
+                      the app and RSVP to their favorite events.
+                    </p>
+                  </div>
+                  <div class="flex flex-wrap">
+                    <div class="flex mr-4 mt-1 items-center">
+                      <div class="h-4 w-4 bg-green-800 rounded-full"></div>
+                      <span class="ml-1">Django</span>
+                    </div>
+                    <div class="flex mr-4 mt-1 items-center">
+                      <div class="h-4 w-4 bg-red-500 rounded-full"></div>
+                      <span class="ml-1">DRF</span>
+                    </div>
+                    <div class="flex mr-4 mt-1 items-center">
+                      <div class="h-4 w-4 bg-indigo-700 rounded-full"></div>
+                      <span class="ml-1">PostgreSQL</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full lg:w-1/2 px-2 my-2">
+                <div class="github-card flex flex-col justify-between">
+                  <div class="content">
+                    <p class="font-semibold github-blue">
+                      <a href="https://ansh-blog.herokuapp.com/">
+                        Blog
+                      </a>
+                    </p>
+                    <p>
+                      <a href="https://github.com/ansh-saini/Blog">
+                        ansh-saini/blog
+                      </a>
+                    </p>
+                    <p class="my-3">
+                      This project was my foundation of Django. After I finished
+                      the tutorial series, I proceeded to improve the
+                      application and add more features to it by myself.
+                    </p>
+                  </div>
+                  <div class="flex flex-wrap">
+                    <div class="flex mr-4 mt-1 items-center">
+                      <div class="h-4 w-4 bg-green-800 rounded-full"></div>
+                      <span class="ml-1">Django</span>
+                    </div>
+                    <div class="flex mr-4 mt-1 items-center">
+                      <div class="h-4 w-4 bg-indigo-700 rounded-full"></div>
+                      <span class="ml-1">PostgreSQL</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="contact">
+            <p class="text-3xl">
+              Contact
+            </p>
+            <hr />
+
+            <p class="my-4">
+              Feel free to shoot me an email at
+              <span class="font-semibold github-blue">
+                anshsaini625@gmail.com
+              </span>
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-gray-800 py-4 mt-8">
+      <div class="text-center text-white">
+        <p>UI Inspired from <a href="https://github.com">github.com</a></p>
+        <p class="text-xs">
+          (I'm not a designer lol)
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

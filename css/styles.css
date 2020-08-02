@@ -1,0 +1,97 @@
+:root {
+  --border-gray: #e1e4e8;
+  --github-blue: #0366d6;
+  --github-text-gray: #586069;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  /* background-color: red; */
+}
+
+nav ul {
+  color: white;
+}
+
+.nav-bg {
+  background-color: #24292e;
+}
+
+.list-item {
+  border-bottom: 1px solid #eaecef;
+  padding: 0.7rem;
+}
+
+.link-text:hover {
+  text-decoration: underline;
+}
+
+.list-item-active {
+  border-left: 2px solid #f9826c;
+}
+
+.list-item:hover {
+  background-color: #f6f8fa;
+}
+
+.list-container {
+  border: 1px solid #eaecef;
+  border-radius: 4px;
+}
+
+.list-container li:last-child {
+  border-bottom: none;
+}
+
+.avatar {
+  width: 15rem;
+  height: 15rem;
+}
+
+textarea {
+  min-height: 117px;
+  max-height: 180px;
+}
+
+input,
+textarea {
+  padding: 5px 10px;
+  background-color: #fafbfc;
+  border: 1px solid var(--border-gray);
+  border-radius: 5px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--github-blue);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(3, 102, 214, 0.3);
+}
+
+.github-card {
+  color: var(--github-text-gray);
+  height: 100%;
+  padding: 1.5rem 1rem;
+  border: 1px solid var(--border-gray);
+  border-radius: 8px;
+}
+
+.github-card a:hover {
+  text-decoration: underline;
+}
+
+.github-blue {
+  color: var(--github-blue);
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
