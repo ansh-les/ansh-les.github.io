@@ -2,6 +2,7 @@
   --border-gray: #e1e4e8;
   --github-blue: #0366d6;
   --github-text-gray: #586069;
+  --linkedin-blue: #0077b5;
 }
 
 html,
@@ -94,4 +95,12 @@ footer a {
 
 footer a:hover {
   text-decoration: none;
+}
+
+.custom-container {
+  max-width: 750px;
+}
+
+.linkedin-blue {
+  color: var(--linkedin-blue);
 }
