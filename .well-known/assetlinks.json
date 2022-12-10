@@ -1,0 +1,14 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.example.suraasa_school",
+            "sha256_cert_fingerprints": [
+                "A7:A9:B1:F8:0A:FA:EA:91:20:B7:8E:74:A6:0A:3A:26:8F:05:F6:92:1C:12:D7:35:37:B4:15:E1:9E:9B:DD:5A"
+            ]
+        }
+    }
+]
